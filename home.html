@@ -1,0 +1,137 @@
+
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<style>
+
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 60%;
+    background-color:#006699;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+
+
+div {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+	width:40%
+}
+
+ul {
+    
+    background-color:#006699;
+}
+
+nav{
+
+border-radius: 5px;
+    background-color:#a6a6a6;
+    padding: 1px;
+}
+input[type=submit]:hover {
+    background-color:#808080;
+}
+
+.button {
+	background-color: #006699;
+	color: white;
+	border: none;
+ 	border-radius: 4px;
+	width: 65px;
+	padding: 12px 20px;
+  	text-align: center;
+  	text-decoration: none;
+ 	display: inline-block;
+ 	font-size: 16px;
+ 	float: right;
+	margin-right:20px;
+	margin-top: 10px;
+}
+.button:hover {
+    background-color:#808080;
+}
+
+</style>
+</head>
+<header>
+<h1>
+DigiJobs
+
+</h1>
+</header>
+
+
+
+
+<nav>
+<ul>
+<li><a href="home.html" class="active">HOME</a></li>
+<li><a href="job.php">JOBS</a></li>
+<li><a href="company11.html">COMPANIES</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+<li><a href="about.html">ABOUT US</a></li>
+
+</ul>
+</nav>
+<body>
+<a href="reg.html" class="button">Register</a>
+<a href="login.php" class="button">Login</a>
+
+<br>
+<section>
+<br>
+<br>
+<center>
+<div>
+  <form action="search1.php" method="POST">
+   
+     <label for="j_profile">Search JOBS By Their Types</label>
+    <select id="j_profile" name="j_profile">
+      <option value="Network">Network Engineer </option>
+      <option value="Marketing">Marketing Executive</option>
+      <option value="Software"> Software Engineer</option>
+      <option value="Tester">Software Tester</option>
+      <option value="ios">ios Developer</option>
+     <option value="Quality">Quality Control</option>
+     <option value="Civil">Civil Engineer</option>
+     <option value="Production">Production Engineer</option>
+     <option value="Web">Web Developer</option>
+     <option value="Automobile">Automobile Engineer </option>
+
+    </select>
+  
+    <input type="submit" name="search" value="Search">
+  </form>
+</div></center>
+</p>
+
+
+
+</section>
+
+<footer> &copy;  Copyright 2019 | All Rights Reserved | Digijobs.com
+</footer>
+</body>
+</html>

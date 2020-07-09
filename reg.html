@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script>
+function check_pass() {
+	if (document.getElementById('pass').value==
+		document.getElementById('passc').value)
+	{
+		return true;
+	} 
+	else{
+		alert("Password is not matching.");
+		return false;
+		}
+			}
+</script>
+<style>
+
+
+
+	
+input[type=text], select, textarea {
+ 	 width: 50%;
+	padding: 12px;
+ 	 border: 1px solid #ccc;
+ 	 border-radius: 4px;
+  	resize: vertical;
+}
+
+label {
+  	padding: 12px 12px 12px 0;
+  	display: inline-block;
+}
+
+input[type=submit] {
+	
+  	background-color: #006699;
+  	color: white;
+  	padding: 12px 20px;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	margin-left: 25%;
+	width:20%
+}
+
+	
+
+.container {
+	margin-left: auto;
+  	margin-right: auto;
+	width: 60%;
+ 	 border-radius: 5px;
+ 	 background-color: #f2f2f2;
+ 	 padding: 20px;
+	font-size: 22px;
+}
+
+.col-25 {
+ 	 float: left;
+ 	 width: 23%;
+ 	 margin-top: 6px;
+}
+
+.col-75 {
+ 	 float: left;
+ 	 width: 75%;
+ 	 margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+	
+	
+</style>
+</head>
+
+<header>
+<h1>
+DigiJobs
+
+</h1>
+</header>
+
+
+
+
+<nav>
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li><a href="job.php">JOBS</a></li>
+<li><a href="company11.html">COMPANIES</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+<li><a href="about.html">ABOUT US</a></li>
+
+
+
+
+</ul>
+</nav>
+<body>
+
+<h2> Register with us </h2>
+<br>
+
+<div class="container">
+
+  <form action="upload.php" method="post">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname"> First Name : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name" required >
+      </div>
+    </div> <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="lname"> Last Name : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required >
+      </div>
+    </div> <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="email"> E-mail : </label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Enter E-mail" required >
+      </div>
+    </div> <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="mobile"> Mobile : </label>
+      </div>
+      <div class="col-75">
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter Mobile No."  required >
+      </div>
+    </div> <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="dob"> Date of Birth : </label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="dob" name="dob" placeholder="Enter DOB" required >
+      </div>
+    </div> <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="city"> City : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="city" placeholder="Enter City" required >
+      </div>
+    </div> <br>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="pass">Password : </label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="pass" name="pass" placeholder="Enter password" required >
+      </div>
+    </div> <br>
+
+ <div class="row">
+      <div class="col-25">
+        <label for="passc">Confirm Password : </label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="passc" name="passc" placeholder="Re-Enter password" required  >
+      </div>
+    </div> <br>
+    
+    <div class="row">
+	<div class="col-75">
+		      
+      <input type="submit" name="submit" id="submit" value="Register" onclick="return check_pass()" >
+		</div>      
+    </div>
+  </form>
+</div>
+<footer> &copy;  Copyright 2019 | All Rights Reserved | Digijobs.com
+</footer>
+</body>
+</html>

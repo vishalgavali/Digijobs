@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+
+
+	
+input[type=text], select, textarea {
+ 	 width: 50%;
+	padding: 12px;
+ 	 border: 1px solid #ccc;
+ 	 border-radius: 4px;
+  	resize: vertical;
+}
+
+label {
+  	padding: 12px 12px 12px 0;
+  	display: inline-block;
+}
+
+input[type=submit]{
+	
+  	background-color: #006699;
+  	color: white;
+  	padding: 12px 20px;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	margin-left: 30%;
+	width:20%
+}
+
+	
+
+.container {
+	margin-left: auto;
+  	margin-right: auto;
+	width: 60%;
+ 	 border-radius: 5px;
+ 	 background-color: #f2f2f2;
+ 	 padding: 20px;
+	font-size: 22px;
+}
+
+.col-25 {
+ 	 float: left;
+ 	 width: 23%;
+ 	 margin-top: 6px;
+}
+
+.col-75 {
+ 	 float: left;
+ 	 width: 75%;
+ 	 margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+	
+	background-color: #006699;
+	color: white;
+	border: none;
+ 	border-radius: 4px;
+	width: 150px;
+	padding: 12px 20px;
+  	text-align: center;
+  	text-decoration: none;
+ 	display: inline-block;
+ 	font-size: 16px;
+	margin-left:800px;
+	margin-top:30px;
+}	
+	
+</style>
+</head>
+
+<header>
+<h1>
+DigiJobs
+
+</h1>
+</header>
+
+
+
+
+<nav>
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li><a href="job.php">JOBS</a></li>
+<li><a href="company11.html">COMPANIES</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+<li><a href="about.html">ABOUT US</a></li>
+
+
+
+
+</ul>
+</nav>
+<body>
+
+<h2> Add Job </h2>
+<br>
+
+<div class="container">
+
+  <form action="uploadjob.php" method="post">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="j_profile"> Job Profile : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="j_profile" name="j_profile" placeholder="Enter Job Profile" required >
+      </div>
+    </div> <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="city"> City : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="city" placeholder="Enter City" required >
+      </div>
+    </div> <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="vac"> Vacancy : </label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="vac" name="vac" placeholder="Enter Vacancy" required >
+      </div>
+    </div> <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="pac"> Package : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pac" name="pac"  placeholder="Enter Package"  required >
+      </div>
+    </div> <br>
+
+<div class="row">
+      <div class="col-25">
+        <label for="c_id"> Company Id : </label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="c_id" name="c_id" placeholder="Enter Company Id " required >
+      </div>
+    </div> <br>
+
+ <br>
+    
+    <div class="row">
+
+	<div class="col-75">
+
+      <input type="submit" name="submit" id="submit" value="Add"  >
+		</div>      
+    </div>
+  </form>
+</div>
+		<a href="admin.php" class="button">Back</a>	 
+<footer> &copy;  Copyright 2019 | All Rights Reserved | Digijobs.com
+</footer>     
+</body>
+</html>
